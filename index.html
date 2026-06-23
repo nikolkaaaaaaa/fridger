@@ -329,93 +329,69 @@
 <script>
 
 const GROCERY_LIST = {
-  "mlieko a vajicka": [
-    "vajicka", "mlieko", "maslo", "alternativne mlieko", "syr", "jogurt", "mozzarella", "feta", ""
+  "mlieko a vajíčka": [
+    "vajíčka", "mlieko", "maslo",  "syr", "jogurt", "mozzarella", "feta",
+    "tofu", "kokosové mlieko", "kozí syr", "krém"
   ],
-  "Vegetables": [
-    "Onion", "Garlic", "Tomato", "Spinach", "Bell pepper", "Zucchini",
-    "Carrot", "Potato", "Broccoli", "Mushrooms", "Cucumber", "Avocado"
+  "zelenina": [
+    "avokádo", "brokolica", "cuketa", "zázvor", "zemiaky","tekvica",
+    "uhorka", "mrazená zelenina", "hríby", "paradajky", "špenát"
   ],
-  "Meat & Fish": [
-    "Chicken breast", "Ground beef", "Bacon", "Salmon", "Tuna (can)"
+  "ovocie": [
+    "jahody", "mrazene ovocie", "jablká", "banán", "ďatle", "citrón"
   ],
-  "Pantry": [
-    "fusilli", "spaghetti", "rice", "bread", "sriracha", "canned tomatoes",
-    "Chickpeas (can)", "Lentils", "Chicken stock", "Flour"
+  "nevegetariánske":[
+    "kuriatko", "údený losos", "burger"
   ],
-  "Fresh herbs": [
-    "Basil", "Parsley", "Cilantro", "Thyme"
+  "špajza":[
+    "cestoviny", "ryža", "chlebík", "sriracha", "cukor", "passata",
+    "cícer", "fazuľka", "múka", "granola", "cereálie", "placky", "ryžové papiere",
+    "med", "karí pasta", "pesto","ryžové rezance", "sušené paradajky", "quinoa"
   ]
 };
 
 const RECIPES = [
   {
-    name: "Classic Omelette",
-    needs: ["Eggs", "Butter", "Cheddar"],
+    name: "avokádo toast",
+    needs: ["avokádo", "chlebík", "vajíčka"],
     instructions:
-      "1. Beat 3 eggs with a pinch of salt.\n" +
-      "2. Melt butter in a non-stick pan over medium heat.\n" +
-      "3. Pour in eggs, let the edges set, then gently fold.\n" +
-      "4. Add grated cheddar before folding in half.\n" +
-      "5. Slide onto a plate and serve immediately."
+      ""
   },
   {
-    name: "Pasta Aglio e Olio",
-    needs: ["Pasta", "Garlic", "Olive oil", "Parmesan", "Parsley"],
+    name: "karí",
+    needs: ["cuketa", "karí pasta", "kokosové mlieko", "ryža", "cícer"],
     instructions:
-      "1. Cook pasta al dente, reserve ½ cup pasta water.\n" +
-      "2. Slice garlic thinly and toast in olive oil until golden.\n" +
-      "3. Add pasta + a splash of pasta water to the pan.\n" +
-      "4. Toss vigorously off-heat with parmesan.\n" +
-      "5. Finish with fresh parsley and black pepper."
+      ""
   },
   {
-    name: "Tomato & Egg Stir-fry",
-    needs: ["Eggs", "Tomato", "Garlic", "Olive oil"],
+    name: "špenátové cestoviny",
+    needs: ["špenát", "cestoviny", "krém", "sušené paradajky"],
     instructions:
-      "1. Scramble eggs lightly and set aside.\n" +
-      "2. Sauté garlic, add chopped tomatoes and cook until soft.\n" +
-      "3. Return eggs to the pan, toss together.\n" +
-      "4. Season with salt and sugar to taste.\n" +
-      "5. Serve over rice."
+      ""
   },
   {
-    name: "Simple Chicken & Rice",
-    needs: ["Chicken breast", "Rice", "Garlic", "Olive oil", "Chicken stock"],
+    name: "zemiačky",
+    needs: ["zemiaky", "vajíčka"],
     instructions:
-      "1. Season chicken breast with salt, pepper, and garlic.\n" +
-      "2. Sear in olive oil until golden, about 4 min each side.\n" +
-      "3. Remove chicken, toast rice in the same pan 1 min.\n" +
-      "4. Add chicken stock (2:1 ratio), bring to a boil.\n" +
-      "5. Nestle chicken back in, cover and simmer 18 min."
+      ""
   },
   {
-    name: "Spinach & Mushroom Sauté",
-    needs: ["Spinach", "Mushrooms", "Garlic", "Butter", "Parmesan"],
+    name: "quinoa tanier",
+    needs: ["quinoa", "kozí syr", "paradajky", "špenát", "vajíčka"],
     instructions:
-      "1. Melt butter over medium-high heat.\n" +
-      "2. Sauté sliced mushrooms until browned, ~5 min.\n" +
-      "3. Add garlic and cook 30 seconds.\n" +
-      "4. Wilt in spinach, season with salt & pepper.\n" +
-      "5. Finish with grated parmesan."
+      ""
   },
   {
-    name: "Avocado Toast",
-    needs: ["Avocado", "Bread"],
+    name: "tekvicová polievka",
+    needs: ["tekvica"],
     instructions:
-      "1. Toast bread to your liking.\n" +
-      "2. Mash avocado with a fork, season with salt and lemon juice.\n" +
-      "3. Spread on toast.\n" +
-      "4. Optional: top with a fried egg, chili flakes, or sliced tomato."
+      ""
   },
   {
-    name: "Greek Yogurt Bowl",
-    needs: ["Greek yogurt", "Cucumber", "Garlic", "Olive oil"],
+    name: "palacinky",
+    needs: ["múka", "mlieko", "vajíčka"],
     instructions:
-      "1. Grate cucumber, squeeze out excess water.\n" +
-      "2. Mix into Greek yogurt with minced garlic.\n" +
-      "3. Drizzle with olive oil, season with salt.\n" +
-      "4. Serve as a dip or side with bread."
+      ""
   }
 ];
 
